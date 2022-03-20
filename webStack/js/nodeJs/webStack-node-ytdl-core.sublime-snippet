@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+function ytVideoDownloader({videoUrl, title, format}){
+
+	const fs = require("fs");
+	const ytdl = require("ytdl-core");
+
+	const writeableStream = fs.createWriteStream(`\${title}.mp4`);
+
+	writeableStream.on('finish', () => {
+	    console.log(`\${item && length ? `\${item}/\${length} - `:''}\${title} downloaded successfully`);
+	});
+
+	ytdl(videoUrl, {
+	    format: format,
+	}).pipe(writeableStream);	
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ws.ytVideoDownloader || youtube downloader</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js || source.jsx</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+res.set('Access-Control-Allow-Headers', 'Content-Type');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>header.Access-Control-Allow-Headers</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js || source.jsx</scope>
+</snippet>

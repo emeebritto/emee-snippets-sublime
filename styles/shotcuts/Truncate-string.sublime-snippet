@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>s.truncateString</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.css || source.jsx || source.js || source.ts || source.tsx</scope>
+</snippet>

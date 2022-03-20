@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+return axios.get(``)
+	.then(res => res.data)
+	.catch(err => console.warn(err))
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>axios.basic.get</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js || source.jsx || source.ts || source.tsx</scope>
+</snippet>

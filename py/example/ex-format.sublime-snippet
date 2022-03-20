@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+# ===================================
+print('my {}, it's in the {}.format('cat', 'house'))
+# result => my cat, it's in the house
+
+print('my {1}, it's in the {0}.format('cat', 'house'))
+# result => my house, it's in the cat
+
+print('my {s}, it's in the {o}.format(a='cat', o='house'))
+# result => my cat, it's in the house
+# ===================================
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ex.format</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

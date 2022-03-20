@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+html {
+	background: #000;
+	filter: invert(1) hue-rotate(180deg);
+}
+
+img, video, iframe, canvas, svg {
+	filter: invert(1) hue-rotate(180deg);
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>s.easyDarkMode</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.css || source.jsx || source.js || source.ts || source.tsx</scope>
+</snippet>

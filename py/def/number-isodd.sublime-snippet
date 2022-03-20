@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+def isodd(val):
+	try:
+		number = int(val)
+		if number % 2 == 0:
+			return True
+		else:
+			return False
+	except:
+		print(f'val ({val}) is not a number')
+		return None
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>def.isodd</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

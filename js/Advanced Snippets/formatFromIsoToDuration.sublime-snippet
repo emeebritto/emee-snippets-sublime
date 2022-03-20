@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+const formatFromIsoToDuration = durationISO => {
+    const regex = /P((([0-9]*\.?[0-9]*)Y)?(([0-9]*\.?[0-9]*)M)?(([0-9]*\.?[0-9]*)W)?(([0-9]*\.?[0-9]*)D)?)?(T(([0-9]*\.?[0-9]*)H)?(([0-9]*\.?[0-9]*)M)?(([0-9]*\.?[0-9]*)S)?)?/
+    let matches = durationISO.match(regex);
+
+    if(!matches[14]) {
+        // Seconds
+        return `00:${parseFloat(matches[16])}`
+    }
+    if(!matches[12]) {
+        // Minutes and Seconds
+        return `${parseFloat(matches[14])}:${parseFloat(matches[16])}`
+    }
+    // Hour, Minutes and Seconds
+    return `${parseFloat(matches[12])}:${parseFloat(matches[14])}:${parseFloat(matches[16])}`
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>formatFromIsoToDuration</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js || source.jsx || source.ts || source.tsx</scope>
+</snippet>
