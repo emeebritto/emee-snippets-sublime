@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-break
+${1}.insert(${2:0}, ${3})
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>while.break</tabTrigger>
+	<tabTrigger>arr.insert</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.python</scope>
 </snippet>
