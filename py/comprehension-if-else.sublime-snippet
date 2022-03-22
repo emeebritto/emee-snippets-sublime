@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+${1} if ${2} else ${3} for ${4} in ${5}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>comprehension.if.else</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

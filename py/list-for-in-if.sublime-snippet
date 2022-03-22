@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+list(${1} for ${2} in ${3} if ${4})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>list.for.in.if</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
