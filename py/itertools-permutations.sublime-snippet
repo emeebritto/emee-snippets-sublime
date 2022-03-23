@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-permutations(${1:x}, ${2:1})
+${1:itertools.}permutations(${2:x}, ${3:1})
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>permutations</tabTrigger>
+	<tabTrigger>itertools.permutations</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.python</scope>
 </snippet>

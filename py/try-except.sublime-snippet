@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
 try:
-	${1}
-except:
-	${2}
+	${1:pass}
+except${2}:
+	${3:pass}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>try.except</tabTrigger>
