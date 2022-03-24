@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+with open(${1:filename}, ${2:mode}) as ${3:file}:
+	${4:pass}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>with.open.as</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
