@@ -1,9 +1,15 @@
 <snippet>
 	<content><![CDATA[
-isinstance(${1:x}, ${2:int})
+@contextmanager
+def ${1:function}(${2}):
+	try:
+		${3:...}
+		yield ${4:x}
+	finally:
+		${5:pass}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>isinstance</tabTrigger>
+	<tabTrigger>contextmanager</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.python</scope>
 </snippet>

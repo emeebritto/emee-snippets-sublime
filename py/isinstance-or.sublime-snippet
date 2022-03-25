@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-isinstance(${1:x}, ${2:int})
+isinstance(${1:x}, (${2:int}, ${3:float}))
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>isinstance</tabTrigger>
+	<tabTrigger>isinstance.or</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.python</scope>
 </snippet>

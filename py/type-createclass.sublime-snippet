@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-isinstance(${1:x}, ${2:int})
+type('${1:Name}', (${2},), {${3}})
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>isinstance</tabTrigger>
+	<tabTrigger>type.createclass</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.python</scope>
 </snippet>

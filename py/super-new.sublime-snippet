@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-isinstance(${1:x}, ${2:int})
+super().__new__(${1:cls})
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>isinstance</tabTrigger>
+	<tabTrigger>super.new</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.python</scope>
 </snippet>
