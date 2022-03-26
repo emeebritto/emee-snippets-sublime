@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+datetime(${1:YYYY, MM, DD, hh, mm, ss})
+]]></content>
+	<!-- Optional: del a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>datetime</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

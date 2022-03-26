@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+${1:datetime}.strptime(${2:'2022/03/26 04:30:46'}, ${3:'%Y/%m/%d %H:%M:%S'})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>datetime.strptime</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
