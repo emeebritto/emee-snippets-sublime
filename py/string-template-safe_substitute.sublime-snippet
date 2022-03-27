@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+${1:template}.safe_substitute(${2:named_parameters})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>string.template.safe_substitute</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

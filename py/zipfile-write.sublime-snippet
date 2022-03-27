@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+${1:zip}.write(${2:full_path}, ${3:file_name})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ZipFile.write</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+with smtplib.SMTP(host=${1:'smtp.gmail.com'}, port=${2:587}) as ${3:smtp}:
+	${3:smtp}.ehlo()
+	${3:smtp}.starttls()
+	${3:smtp}.login(${4:mail}, ${5:password})
+	${3:smtp}.send_message(${6:mailInfor})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>smtplib</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

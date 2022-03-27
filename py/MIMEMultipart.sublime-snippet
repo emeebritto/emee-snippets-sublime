@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+${1:mailInfor} = MIMEMultipart()
+${1:mailInfor}['from'] = ${2:name}
+${1:mailInfor}['to'] = ${3:targetMail}
+${1:mailInfor}['subject'] = ${4:subject}
+${1:mailInfor}.attach(${5:mailBody})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>MIMEMultipart</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
