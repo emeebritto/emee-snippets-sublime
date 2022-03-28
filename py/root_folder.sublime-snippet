@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+${1:ROOT_FOLDER} = Path(__file__)${2:.parent.parent.parent}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ROOT_FOLDER</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
