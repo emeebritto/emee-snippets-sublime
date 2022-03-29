@@ -1,10 +1,9 @@
 <snippet>
 	<content><![CDATA[
-for root, dirs, files in os.walk(${1:path}):
-	${2:pass}
+from threading import Thread
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>for.in.os.walk</tabTrigger>
+	<tabTrigger>import.Thread</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.python</scope>
 </snippet>
