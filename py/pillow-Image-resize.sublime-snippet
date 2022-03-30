@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+${1:img}.resize(($2, $3), ${4:Image.LANCZOS})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>image.resize((width, height), filter) -> new_img</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
