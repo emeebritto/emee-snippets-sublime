@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+pymysql.connect(
+	host=$1
+	user=$2
+	password=$3
+	db=$4
+	charset=${5:utf8mb4}
+	cursorclass=pymysql.cursors.DictCursor
+)
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pymysql.connect(host, user, password, ...) -> connection</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
