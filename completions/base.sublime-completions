@@ -1,0 +1,15 @@
+{
+  "scope": [
+    "source.python"
+  ],
+  "completions": [
+    {
+      "trigger": "___\tbase",
+      "contents": "___"
+    },
+    {
+      "trigger": "___\tbase",
+      "contents": "___)"
+    }
+  ]
+}

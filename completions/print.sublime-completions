@@ -1,0 +1,43 @@
+{
+  "scope": [
+    "source.python"
+  ],
+  "completions": [
+    {
+      "trigger": "print()\tprint",
+      "contents": "print($1)"
+    },
+    {
+      "trigger": "print.f\tprint",
+      "contents": "print(f'$1')"
+    },
+    {
+      "trigger": "print.len\tprint",
+      "contents": "print(len($1))"
+    },
+    {
+      "trigger": "print.lower\tprint",
+      "contents": "print($1.lower())"
+    },
+    {
+      "trigger": "print.upper\tprint",
+      "contents": "print($1.upper())"
+    },
+    {
+      "trigger": "print.type\tprint",
+      "contents": "print(type($1))"
+    },
+    {
+      "trigger": "print.format\tprint",
+      "contents": "print('$1'.format($2))"
+    },
+    {
+      "trigger": "print.dir\tprint",
+      "contents": "print(dir($1))"
+    },
+    {
+      "trigger": "print.count\tprint",
+      "contents": "print(${1:in}.count(${2:item}))"
+    }
+  ]
+}

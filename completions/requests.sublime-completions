@@ -1,0 +1,19 @@
+{
+  "scope": [
+    "source.python"
+  ],
+  "completions": [
+    {
+      "trigger": "import.requests\trequests",
+      "contents": "import requests"
+    },
+    {
+      "trigger": "requests.get(url, stream=true) -> stream\trequests",
+      "contents": "requests.get(${1:url}, ${2:stream=True})"
+    },
+    {
+      "trigger": "requests.get(url) -> res\trequests",
+      "contents": "requests.get(${1:url})"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-print(${1:x}.count(${2:item}))
+${1:template} = ${2:string.}Template(${3:file})
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>print.count</tabTrigger>
+	<tabTrigger>string.Template</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.python</scope>
 </snippet>

@@ -1,0 +1,31 @@
+{
+  "scope": [
+    "source.python"
+  ],
+  "completions": [
+    {
+      "trigger": "import.urllib.request\turllib.request",
+      "contents": "import urllib.request"
+    },
+    {
+      "trigger": "urllib.request.Request(url, headers=headers) -> res\turllib.request",
+      "contents": "urllib.request.Request(${1:url}, headers=${2:headers})"
+    },
+    {
+      "trigger": "urllib.request.urlopen(req) -> opened_url\turllib.request",
+      "contents": "urllib.request.urlopen(${1:req})"
+    },
+    {
+      "trigger": "urlopen.read()\turllib.request",
+      "contents": "$1.read()"
+    },
+    {
+      "trigger": "read.encode(str)\turllib.request",
+      "contents": "$1.encode(${1:'utf-8'})"
+    },
+    {
+      "trigger": "read.decode(str)\turllib.request",
+      "contents": "$1.decode(${1:'utf-8'})"
+    }
+  ]
+}
