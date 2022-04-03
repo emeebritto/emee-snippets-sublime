@@ -1,0 +1,39 @@
+{
+  "scope": [
+    "source.python"
+  ],
+  "completions": [
+    {
+      "trigger": "import.unittest\tunittest",
+      "contents": "import unittest"
+    },
+    {
+      "trigger": "unittest.main(verbosity=2)\tunittest",
+      "contents": "unittest.main(${1:verbosity=2})"
+    },
+    {
+      "trigger": "class.unittest\tunittest",
+      "contents": "class Test${1:Class_name}(unittest.TestCase):\n\tdef test_${2:title}(self):\n\t\t${3:self.assertEqual(5 + 5, 10)}"
+    },
+    {
+      "trigger": "def.test\tunittest",
+      "contents": "def test_${1:title}(self):\n\t${2:self.assertEqual(soma(-5, 5), 0)}"
+    },
+    {
+      "trigger": "testcase.assertEqual(test, expected)\tunittest",
+      "contents": "self.assertEqual($1, $2)"
+    },
+    {
+      "trigger": "testcase.assertEqual(test, expected, msg)\tunittest",
+      "contents": "self.assertEqual($1, $2, msg=$3)"
+    },
+    {
+      "trigger": "testcase.subTest(var)\tunittest",
+      "contents": "with self.subTest(${1:x_y_saida}=${1:x_y_saida}):\n\t${2:self.assertEqual(soma(x, y), saida)}"
+    },
+    {
+      "trigger": "testcase.assertRaises(ErrorType)\tunittest",
+      "contents": "with self.assertRaises(${1:AssertionError}):\n\t${2:soma(11, '0')}"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "scope": [
+    "source.python"
+  ],
+  "completions": [
+    {
+      "trigger": "assert\tpython",
+      "contents": "assert ${1:isinstance(x, int)}, ${2:'message error'}"
+    },{
+      "trigger": "import.doctest\tpython",
+      "contents": "import doctest)"
+    },{
+      "trigger": "doctest.testmod(verbose=True)\tpython",
+      "contents": "doctest.testmod(${1:verbose=True})"
+    },{
+      "trigger": "ifmain.doctest\tpython",
+      "contents": "if __name__ == \"__main__\":\n\timport doctest\n\tdoctest.testmod(${1:verbose=True})"
+    },{
+      "trigger": "doctest\tpython",
+      "contents": "\"\"\"${1:title function}\n>>> ${2:function}(${3:params})\n${4:expected_return}\n\"\"\""
+    }
+  ]
+}
