@@ -6,34 +6,36 @@
     {
       "trigger": "import.pygame\tpygame",
       "contents": "import pygame"
-    },
-    {
+    },{
       "trigger": "pygame.init()\tpygame",
       "contents": "pygame.init()"
-    },
-    {
+    },{
       "trigger": "pygame.mixer.music.load(file_mp3)\tpygame",
       "contents": "pygame.mixer.music.load('${1:audio.mp3}')"
-    },
-    {
+    },{
       "trigger": "pygame.time.Clock() -> clock\tpygame",
       "contents": "pygame.time.Clock()"
-    },
-    {
+    },{
       "trigger": "pygame.mixer.music.get_busy() -> bool\tpygame",
       "contents": "pygame.mixer.music.get_busy()"
-    },
-    {
+    },{
       "trigger": "pygame.time.Clock().tick()\tpygame",
       "contents": "${1:clock}.tick(${2:60})"
-    },
-    {
+    },{
       "trigger": "pygame.event.poll()\tpygame",
       "contents": "pygame.event.poll()"
-    },
-    {
+    },{
       "trigger": "pygame.mixer.music.play()\tpygame",
       "contents": "pygame.mixer.music.play()"
+    },{
+      "trigger": "pygame.image.load(img_path) -> img\tpygame",
+      "contents": "pygame.image.load(${1:os.path.join(${2:\"assets\"}, ${3:\"pixel_ship_red_small.png\"})})"
+    },{
+      "trigger": "pygame.transform.scale(pygame.image.load(img_path), (WIDTH, HEIGHT)) -> img\tpygame",
+      "contents": "pygame.transform.scale(pygame.image.load(${1:img_path}), ${2:(WIDTH, HEIGHT)})"
+    },{
+      "trigger": "pygame.transform.scale(file, (WIDTH, HEIGHT)) -> file\tpygame",
+      "contents": "pygame.transform.scale($1, ${2:(WIDTH, HEIGHT)})"
     }
   ]
 }

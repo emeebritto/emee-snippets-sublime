@@ -6,34 +6,42 @@
     {
       "trigger": "import.unittest\tunittest",
       "contents": "import unittest"
-    },
-    {
+    },{
+      "trigger": "import.patch\tunittest",
+      "contents": "from unittest.mock import patch"
+    },{
       "trigger": "unittest.main(verbosity=2)\tunittest",
       "contents": "unittest.main(${1:verbosity=2})"
-    },
-    {
+    },{
       "trigger": "class.unittest\tunittest",
       "contents": "class Test${1:Class_name}(unittest.TestCase):\n\tdef test_${2:title}(self):\n\t\t${3:self.assertEqual(5 + 5, 10)}"
-    },
-    {
+    },{
+      "trigger": "def.setUp\tunittest",
+      "contents": "def setUp(self):\n\t${1:self.p1 = Pessoa('Nexa', 20)}"
+    },{
       "trigger": "def.test\tunittest",
       "contents": "def test_${1:title}(self):\n\t${2:self.assertEqual(soma(-5, 5), 0)}"
-    },
-    {
+    },{
+      "trigger": "testcase.assertFalse(test)\tunittest",
+      "contents": "self.assertFalse($1)"
+    },{
+      "trigger": "testcase.assertIsInstance(test, instance)\tunittest",
+      "contents": "self.assertIsInstance($1, ${2:str})"
+    },{
       "trigger": "testcase.assertEqual(test, expected)\tunittest",
       "contents": "self.assertEqual($1, $2)"
-    },
-    {
+    },{
       "trigger": "testcase.assertEqual(test, expected, msg)\tunittest",
       "contents": "self.assertEqual($1, $2, msg=$3)"
-    },
-    {
+    },{
       "trigger": "testcase.subTest(var)\tunittest",
       "contents": "with self.subTest(${1:x_y_saida}=${1:x_y_saida}):\n\t${2:self.assertEqual(soma(x, y), saida)}"
-    },
-    {
+    },{
       "trigger": "testcase.assertRaises(ErrorType)\tunittest",
       "contents": "with self.assertRaises(${1:AssertionError}):\n\t${2:soma(11, '0')}"
+    },{
+      "trigger": "with.patch('requests.get').as\tunittest",
+      "contents": "with patch('requests.get') as ${1:fake_request}:\n\t${2:fake_request}.return_value.${3:ok = False}"
     }
   ]
 }

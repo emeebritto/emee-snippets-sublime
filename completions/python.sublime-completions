@@ -18,6 +18,48 @@
     },{
       "trigger": "doctest\tpython",
       "contents": "\"\"\"${1:title function}\n>>> ${2:function}(${3:params})\n${4:expected_return}\n\"\"\""
+    },{
+      "trigger": "NewType\tpython.typing",
+      "contents": "NewType('${1:var_name}', ${2:type})"
+    },{
+      "trigger": "from.typing.import.*\tpython.typing",
+      "contents": "from typing import ${1:*}"
+    },{
+      "trigger": "import.List\tpython.typing",
+      "contents": "from typing import List"
+    },{
+      "trigger": "import.NewType\tpython.typing",
+      "contents": "from typing import NewType"
+    },{
+      "trigger": "List[type]\tpython.typing",
+      "contents": "List[${1:int}]"
+    },{
+      "trigger": "List.Union\tpython.typing",
+      "contents": "List[Union[${1:int}]]"
+    },{
+      "trigger": "import.Union\tpython.typing",
+      "contents": "from typing import Union"
+    },{
+      "trigger": "import.Tuple\tpython.typing",
+      "contents": "from typing import Tuple"
+    },{
+      "trigger": "import.Dict\tpython.typing",
+      "contents": "from typing import Dict"
+    },{
+      "trigger": "Tuple[types]\tpython.typing",
+      "contents": "Tuple[$1]"
+    },{
+      "trigger": "Dict[key_type, value_type]\tpython.typing",
+      "contents": "Dict[${1:key_type}, ${2:value_type}]"
+    },{
+      "trigger": "Callable[[params_type], return_type]\tpython.typing",
+      "contents": "Callable[[$1], ${2:None}]"
+    },{
+      "trigger": "Sequence[sequence_type]\tpython.typing",
+      "contents": "Sequence[${1:int}]"
+    },{
+      "trigger": "Iterable[sequence_type]\tpython.typing",
+      "contents": "Sequence[${1:int}]"
     }
   ]
 }
