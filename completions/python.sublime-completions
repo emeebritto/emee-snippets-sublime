@@ -60,6 +60,21 @@
     },{
       "trigger": "Iterable[sequence_type]\tpython.typing",
       "contents": "Sequence[${1:int}]"
+    },{
+      "trigger": "def.decorator.singleton\tpython",
+      "contents": "def singleton(the_class):\n\tinstances = {}\n\tdef get_class(*args, **kwargs):\n\t\tif the_class not in instances:\n\t\t\tinstances[the_class] = the_class(*args, **kwargs)\n\t\treturn instances[the_class]\n\treturn get_class"
+    },{
+      "trigger": "def.decorator\tpython",
+      "contents": "def ${1:name}(func):\n\tdef ${2:function}(*args, **kwargs):\n\t\treturn func(*args, **kwargs)\n\treturn ${2:function}"
+    },{
+      "trigger": "metaclass.singleton\tpython",
+      "contents": "class Singleton(type):\n\t_instances = {}\n\n\tdef __call__(cls, *args, **kwargs):\n\t\tif cls not in cls._instances:\n\t\t\tcls._instances[cls] = super().__call__(*args, **kwargs)\n\t\treturn cls._instances[cls]"
+    },{
+      "trigger": "metaclass\tpython",
+      "contents": "class ${1:Meta}(type):\n\tdef __new__(mcs, name, bases, namespace):${2}\n\t\treturn type.__new__(mcs, name, bases, namespace)"
+    },{
+      "trigger": "import.annotations\tpython.__future__",
+      "contents": "from __future__ import annotations"
     }
   ]
 }
