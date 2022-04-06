@@ -1,7 +1,5 @@
 {
-  "scope": [
-    "source.python"
-  ],
+  "scope": "source.python",
   "completions": [
     {
       "trigger": "import os\tos",

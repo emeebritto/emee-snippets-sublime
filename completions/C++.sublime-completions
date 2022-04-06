@@ -1,0 +1,39 @@
+{
+  "scope": "source.c++",
+  "completions": [
+    {
+      "trigger": "include \"iostream\"\tC++",
+      "contents": "#include \"iostream\""
+    },{
+      "trigger": "using namespace std;\tC++",
+      "contents": "using namespace std;"
+    },{
+      "trigger": "f.def\tC++",
+      "contents": "${3:void} ${1:function_name}()\n{\n\t${2:cout << \"My Function :3\";}\n}"
+    },{
+      "trigger": "cout\tC++",
+      "contents": "cout << $1;"
+    },{
+      "trigger": "cin\tC++",
+      "contents": "cin >> $1;"
+    },{
+      "trigger": "endl\tC++",
+      "contents": "<< endl"
+    },{
+      "trigger": "system(\"pause>0\");\tC++",
+      "contents": "system(\"pause>0\");"
+    },{
+      "trigger": "system(terminal_command);\tC++",
+      "contents": "system(\"$1\");"
+    },{
+      "trigger": "if.else\tC++",
+      "contents": "if ($1)\n{\n\t${2:cout << \"This is amazing!\";}\n}\nelse\n{\n\t${3:cout << \"So Cool!\";}\n}"
+    },{
+      "trigger": "else.if\tC++",
+      "contents": "else if ($1)\n{\n\t${2:cout << \"So Cool!\";}\n}"
+    },{
+      "trigger": "ternary\tC++",
+      "contents": "(${1:condition})? ${2:true} : ${3:false};"
+    }
+  ]
+}
