@@ -2,11 +2,32 @@
   "scope": "source.c++",
   "completions": [
     {
-      "trigger": "include \"iostream\"\tC++",
-      "contents": "#include \"iostream\""
+      "trigger": "include <iostream>\tC++",
+      "contents": "#include <iostream>"
+    },{
+      "trigger": "include <string>\tC++",
+      "contents": "#include <string>"
+    },{
+      "trigger": "include <tchar.h>\tC++",
+      "contents": "#include <tchar.h>"
+    },{
+      "trigger": "include <io.h>\tC++",
+      "contents": "#include <io.h>"
+    },{
+      "trigger": "include <fcntl.h>\tC++",
+      "contents": "#include <fcntl.h>"
+    },{
+      "trigger": "include <iomanip>\tC++",
+      "contents": "#include <iomanip>"
     },{
       "trigger": "using namespace std;\tC++",
       "contents": "using namespace std;"
+    },{
+      "trigger": "_tsetlocale(LC_ALL, _T(\"portuguese\"));\tC++",
+      "contents": "_tsetlocale(LC_ALL, _T(\"${1:portuguese}\"));"
+    },{
+      "trigger": "_setmode(_fileno(stdout), _O_U16TEXT);\tC++",
+      "contents": "_setmode(_fileno(stdout), _O_U16TEXT);"
     },{
       "trigger": "f.def\tC++",
       "contents": "${3:void} ${1:function_name}()\n{\n\t${2:cout << \"My Function :3\";}\n}"
@@ -14,11 +35,26 @@
       "trigger": "cout\tC++",
       "contents": "cout << $1;"
     },{
+      "trigger": "std::wcout\tC++",
+      "contents": "std::wcout << $1;"
+    },{
+      "trigger": "wcout\tC++",
+      "contents": "wcout << $1;"
+    },{
+      "trigger": "std::cout\tC++",
+      "contents": "std::cout << $1;"
+    },{
       "trigger": "cin\tC++",
       "contents": "cin >> $1;"
     },{
+      "trigger": "std::cin\tC++",
+      "contents": "std::cin >> $1;"
+    },{
       "trigger": "endl\tC++",
       "contents": "<< endl"
+    },{
+      "trigger": "std::endl\tC++",
+      "contents": "<< std::endl"
     },{
       "trigger": "system(\"pause>0\");\tC++",
       "contents": "system(\"pause>0\");"
@@ -34,6 +70,81 @@
     },{
       "trigger": "ternary\tC++",
       "contents": "(${1:condition})? ${2:true} : ${3:false};"
+    },{
+      "trigger": "switch\tC++",
+      "contents": "switch (${1:x})\n{\n\tcase ${2:1}:\n\t\t${3:cout << \"So Cool!\";}\n\t\tbreak;\n\tcase ${4:2}:\n\t\t${5:cout << \"Nice!\";}\n\t\tbreak;$6\n}"
+    },{
+      "trigger": "break;\tC++",
+      "contents": "break;"
+    },{
+      "trigger": "char .. ;\tC++",
+      "contents": "char $1;"
+    },{
+      "trigger": "wchar_t .. ;\tC++",
+      "contents": "wchar_t $1;"
+    },{
+      "trigger": "int .. ;\tC++",
+      "contents": "int $1;"
+    },{
+      "trigger": "unsigned\tC++",
+      "contents": "unsigned $1"
+    },{
+      "trigger": "short\tC++",
+      "contents": "short $1"
+    },{
+      "trigger": "long\tC++",
+      "contents": "long $1"
+    },{
+      "trigger": "bool .. ;\tC++",
+      "contents": "bool $1;"
+    },{
+      "trigger": "double .. ;\tC++",
+      "contents": "double $1;"
+    },{
+      "trigger": "float .. ;\tC++",
+      "contents": "float $1;"
+    },{
+      "trigger": "string .. ;\tC++",
+      "contents": "string $1;"
+    },{
+      "trigger": "std::string(before_space, string)\tC++",
+      "contents": "std::string(${1:10}, ${2:\"Hello world\"})"
+    },{
+      "trigger": "const .. ;\tC++",
+      "contents": "const $1;"
+    },{
+      "trigger": "while\tC++",
+      "contents": "while ($1)\n{\n\t${2:cout << \"Anything\";}\n}"
+    },{
+      "trigger": "define\tC++",
+      "contents": "#define ${1:label} ${2:value}"
+    },{
+      "trigger": "typedef\tC++",
+      "contents": "typedef ${1:dataType} ${2:newName};"
+    },{
+      "trigger": "namespace\tC++",
+      "contents": "namespace ${1:name}\n{\n\t${2:int x};\n\t${3:int y};\n}"
+    },{
+      "trigger": "sizeof(value)\tC++",
+      "contents": "sizeof($1)"
+    },{
+      "trigger": "std::setprecision(value)\tC++",
+      "contents": "std::setprecision(${1:10})"
+    },{
+      "trigger": "setprecision(value)\tC++",
+      "contents": "setprecision(${1:10})"
+    },{
+      "trigger": "void *\tC++",
+      "contents": "(void *)"
+    },{
+      "trigger": "+std::numeric_limits<x>::min()\tC++",
+      "contents": "+std::numeric_limits<${1:int}>::min()"
+    },{
+      "trigger": "+std::numeric_limits<x>::max()\tC++",
+      "contents": "+std::numeric_limits<${1:int}>::max()"
+    },{
+      "trigger": "setw(space_number)\tC++",
+      "contents": "setw(${1:20})"
     }
   ]
 }
