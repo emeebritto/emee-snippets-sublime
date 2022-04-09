@@ -8,8 +8,14 @@
       "trigger": "include <string>\tC++",
       "contents": "#include <string>"
     },{
+      "trigger": "include <cstdlib>\tC++",
+      "contents": "#include <cstdlib>"
+    },{
       "trigger": "include <tchar.h>\tC++",
       "contents": "#include <tchar.h>"
+    },{
+      "trigger": "include <ctime>\tC++",
+      "contents": "#include <ctime>"
     },{
       "trigger": "include <io.h>\tC++",
       "contents": "#include <io.h>"
@@ -29,7 +35,7 @@
       "trigger": "_setmode(_fileno(stdout), _O_U16TEXT);\tC++",
       "contents": "_setmode(_fileno(stdout), _O_U16TEXT);"
     },{
-      "trigger": "f.def\tC++",
+      "trigger": "function\tC++",
       "contents": "${3:void} ${1:function_name}()\n{\n\t${2:cout << \"My Function :3\";}\n}"
     },{
       "trigger": "cout\tC++",
@@ -148,6 +154,22 @@
     },{
       "trigger": "do.while(space_number)\tC++",
       "contents": "do${1: }{\n\t${2:cout << \"nice loop!\";}\n} while ($3);"
+    },{
+      "trigger": "printf()\tC++",
+      "contents": "printf($1)",
+      "details": "<code>printf(\"My %s\", strTest.c_str())</code>"
+    },{
+      "trigger": "std::printf()\tC++",
+      "contents": "std::printf($1)"
+    },{
+      "trigger": "str.c_str()\tC++",
+      "contents": "$1c_str()"
+    },{
+      "trigger": "srand((unsigned)time(0));\tC++",
+      "contents": "srand((unsigned)time(0));"
+    },{
+      "trigger": "(rand() % max) + min\tC++",
+      "contents": "(rand() % ${1:35}) + ${2:1}"
     }
   ]
 }
