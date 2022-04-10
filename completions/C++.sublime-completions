@@ -11,6 +11,9 @@
       "trigger": "include <cstdlib>\tC++",
       "contents": "#include <cstdlib>"
     },{
+      "trigger": "include <cmath>\tC++",
+      "contents": "#include <cmath>"
+    },{
       "trigger": "include <tchar.h>\tC++",
       "contents": "#include <tchar.h>"
     },{
@@ -92,6 +95,9 @@
       "trigger": "int .. ;\tC++",
       "contents": "int $1;"
     },{
+      "trigger": "int\tC++",
+      "contents": "int $1"
+    },{
       "trigger": "unsigned\tC++",
       "contents": "unsigned $1"
     },{
@@ -113,11 +119,27 @@
       "trigger": "string .. ;\tC++",
       "contents": "string $1;"
     },{
+      "trigger": "bool\tC++",
+      "contents": "bool $1"
+    },{
+      "trigger": "double\tC++",
+      "contents": "double $1"
+    },{
+      "trigger": "float\tC++",
+      "contents": "float $1"
+    },{
+      "trigger": "string\tC++",
+      "contents": "string $1"
+    },{
       "trigger": "std::string(before_space, string)\tC++",
       "contents": "std::string(${1:10}, ${2:\"Hello world\"})"
     },{
       "trigger": "const .. ;\tC++",
       "contents": "const $1;"
+    },{
+      "trigger": "static ..\tC++",
+      "contents": "static $1",
+      "details": "create static variable"
     },{
       "trigger": "while\tC++",
       "contents": "while ($1)\n{\n\t${2:cout << \"Anything\";}\n}"
@@ -170,6 +192,42 @@
     },{
       "trigger": "(rand() % max) + min\tC++",
       "contents": "(rand() % ${1:35}) + ${2:1}"
+    },{
+      "trigger": "pragma.once\tC++",
+      "contents": "#pragma once"
+    },{
+      "trigger": "pow(baseNumber, number)\tC++.cmath",
+      "contents": "pow($1, $1)"
+    },{
+      "trigger": "sqrt(number)\tC++.cmath",
+      "contents": "sqrt($1)"
+    },{
+      "trigger": "pointer\tC++",
+      "contents": "${1:type} *${2:name}{ ${3:nullptr} };",
+      "details": "void type = generic pointer"
+    },{
+      "trigger": "ref\tC++",
+      "contents": "${1:type} &${2:name} = ${3:target};",
+      "details": "void type = generic pointer"
+    },{
+      "trigger": "pointer.point\tC++",
+      "contents": "${1:pointerName} = &${2:varName};"
+    },{
+      "trigger": "pointer.adress\tC++",
+      "contents": "&${1:pointerName}"
+    },{
+      "trigger": "pointer.target.value.update\tC++",
+      "contents": "*${1:pointerName} = ${2:value};"
+    },{
+      "trigger": "pointer.target.value\tC++",
+      "contents": "*${1:pointerName}"
+    },{
+      "trigger": "pointer.value\tC++",
+      "contents": "${1:pointerName}"
+    },{
+      "trigger": "pointer.target.cast.value\tC++",
+      "contents": "*(${1:type}*)${2:pointerName}",
+      "details": "if point to be void type"
     }
   ]
 }
