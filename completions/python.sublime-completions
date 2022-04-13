@@ -73,6 +73,28 @@
     },{
       "trigger": "import.annotations\tpython.__future__",
       "contents": "from __future__ import annotations"
+    },{
+      "trigger": "import.flask\tpython.flask",
+      "contents": "from flask import Flask"
+    },{
+      "trigger": "app = Flask(__name__)\tpython.flask",
+      "contents": "${1:app} = Flask(__name__)"
+    },{
+      "trigger": "render_template(html_file)\tpython.flask",
+      "contents": "render_template(${1:home.html})",
+      "details": "html from folder 'template'"
+    },{
+      "trigger": "app.run()\tpython.flask",
+      "contents": "${1:app}.run($2)"
+    },{
+      "trigger": "app.run(debug=True)\tpython.flask",
+      "contents": "${1:app}.run(debug=True)"
+    },{
+      "trigger": "app.route(path)\tpython.flask",
+      "contents": "@${1:app}.route('/$2')\ndef ${3:function}():\n\t${4:pass}"
+    },{
+      "trigger": "app.route(dinamic_path)\tpython.flask",
+      "contents": "@${1:app}.route('/<${2:id}>')\ndef ${3:function}(${2:params}$4):\n\t${5:pass}"
     }
   ]
 }
