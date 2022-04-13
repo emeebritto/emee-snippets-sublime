@@ -8,6 +8,9 @@
       "trigger": "include <string>\tC++",
       "contents": "#include <string>"
     },{
+      "trigger": "include <array>\tC++",
+      "contents": "#include <array>"
+    },{
       "trigger": "include <cstdlib>\tC++",
       "contents": "#include <cstdlib>"
     },{
@@ -228,6 +231,16 @@
       "trigger": "pointer.target.cast.value\tC++",
       "contents": "*(${1:type}*)${2:pointerName}",
       "details": "if point to be void type"
+    },{
+      "trigger": "array\tC++",
+      "contents": "${1:type} ${2:name}[${3:length}] { $4 };"
+    },{
+      "trigger": "array.length\tC++",
+      "contents": "sizeof(${1:vetor}) / sizeof(${2:type})"
+    },{
+      "trigger": "std::size()\tC++",
+      "contents": "std::size($1)",
+      "details": "include <array>"
     }
   ]
 }
