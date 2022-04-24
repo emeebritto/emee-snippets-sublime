@@ -8,6 +8,9 @@
       "trigger": "include <string>\tC++",
       "contents": "#include <string>"
     },{
+      "trigger": "include <vector>\tC++",
+      "contents": "#include <vector>"
+    },{
       "trigger": "include <array>\tC++",
       "contents": "#include <array>"
     },{
@@ -241,6 +244,36 @@
       "trigger": "std::size()\tC++",
       "contents": "std::size($1)",
       "details": "include <array>"
+    },{
+      "trigger": "for.each\tC++",
+      "contents": "for (${3:auto} ${2:num} : ${1:nums})\n{\n\t${4:std::cout << num << std::endl;}\n}",
+    },{
+      "trigger": "fixed\tC++",
+      "contents": "fixed",
+    },{
+      "trigger": "std::fixed\tC++",
+      "contents": "std::fixed",
+    },{
+      "trigger": "std::scientific\tC++",
+      "contents": "std::scientific",
+    },{
+      "trigger": "scientific\tC++",
+      "contents": "scientific",
+    },{
+      "trigger": "std::defaultfloat\tC++",
+      "contents": "std::defaultfloat",
+    },{
+      "trigger": "defaultfloat\tC++",
+      "contents": "defaultfloat",
+    },{
+      "trigger": "std::vector\tC++",
+      "contents": "std::vector<${1:var_type}> ${2:var_name};",
+    },{
+      "trigger": "vector\tC++",
+      "contents": "vector<${1:var_type}> ${2:var_name};",
+    },{
+      "trigger": "vector.push_back(value)\tC++",
+      "contents": "${1:vector_name}.push_back(${2:25});",
     }
   ]
 }
