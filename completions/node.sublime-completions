@@ -1,0 +1,78 @@
+{
+  "scope": [
+    "source.jsx",
+    "source.js"
+  ],
+  "completions": [
+    {
+      "trigger": "const\tnode",
+      "contents": "const $1 = $2"
+    },{
+      "trigger": "var\tnode",
+      "contents": "var $1 = $2)"
+    },{
+      "trigger": "let\tnode",
+      "contents": "let $1 = $2)"
+    },{
+      "trigger": "if\tnode",
+      "contents": "if ($1) {\n\t$2\n}"
+    },{
+      "trigger": "else\tnode",
+      "contents": "else {\n\t$1\n}"
+    },{
+      "trigger": "import\tnode",
+      "contents": "import $1 from \"$2\";"
+    },{
+      "trigger": "import.default\tnode",
+      "contents": "import { $1 } from \"$2\";"
+    },{
+      "trigger": "function\tnode",
+      "contents": "function ${1:myFunction}($2) {\n\t$3\n}"
+    },{
+      "trigger": "arrow\tnode",
+      "contents": "($1) => $2"
+    },{
+      "trigger": "ternary\tnode",
+      "contents": "$1 ? $2 : $3"
+    },{
+      "trigger": "require\tnode",
+      "contents": "require(\"${1:path}\")"
+    },{
+      "trigger": "require.node\tnode",
+      "contents": "require(\"node:${1:path}\")"
+    },{
+      "trigger": "const.require\tnode",
+      "contents": "const { ${1:module} } = require(\"${2:path}\")"
+    },{
+      "trigger": "const.require.default\tnode",
+      "contents": "const ${1:module} = require(\"${2:path}\")"
+    },{
+      "trigger": "module.exports\tnode",
+      "contents": "module.exports = ${1:thing}"
+    },{
+      "trigger": "JSON.stringify\tnode",
+      "contents": "JSON.stringify(${1:data})"
+    },{
+      "trigger": "express.get\texpress.js",
+      "contents": "${1:app}.get(\"/$2\", $3)"
+    },{
+      "trigger": "express.use\texpress.js",
+      "contents": "${1:app}.use($2)"
+    },{
+      "trigger": "express.listen\texpress.js",
+      "contents": "${1:app}.listen(${2:PORT}, $3)"
+    },{
+      "trigger": "express.res.send\texpress.js",
+      "contents": "${1:res}.send($2)"
+    },{
+      "trigger": "express.res.json\texpress.js",
+      "contents": "${1:res}.json($2)"
+    },{
+      "trigger": "express.req.params\texpress.js",
+      "contents": "req.params"
+    },{
+      "trigger": "express.req.query\texpress.js",
+      "contents": "req.query"
+    }
+  ]
+}

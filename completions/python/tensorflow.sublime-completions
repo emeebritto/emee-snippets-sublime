@@ -1,0 +1,15 @@
+{
+  "scope": [
+    "source.python"
+  ],
+  "completions": [
+    {
+      "trigger": "___\ttensorflow",
+      "contents": "___"
+    },
+    {
+      "trigger": "___\ttensorflow",
+      "contents": "___)"
+    }
+  ]
+}
