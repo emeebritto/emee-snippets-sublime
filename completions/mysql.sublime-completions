@@ -1,0 +1,39 @@
+{
+  "scope": [
+    "source.python",
+    "source.js",
+    "source.jsx",
+    "source.ts",
+    "source.tsx"  
+  ],
+  "completions": [
+    {
+      "trigger": "CREATE.TABLE\tmySql",
+      "contents": "CREATE TABLE ${1:table_name}"
+    },{
+      "trigger": "VARCHAR\tmySql",
+      "contents": "VARCHAR(${1:50})"
+    },{
+      "trigger": "INT\tmySql",
+      "contents": "INT"
+    },{
+      "trigger": "INSERT.INTO\tmySql",
+      "contents": "INSERT INTO ${1:table_name} VALUES $2"
+    },{
+      "trigger": "SELECT.FROM\tmySql",
+      "contents": "SELECT ${1:*} FROM ${2:table_name}"
+    },{
+      "trigger": "SELECT.FROM.WHERE\tmySql",
+      "contents": "SELECT ${1:*} FROM ${2:table_name} WHERE $3"
+    },{
+      "trigger": "DELETE.FROM.WHERE\tmySql",
+      "contents": "DELETE FROM ${1:table_name} WHERE ${2:name = \"nexa\"}"
+    },{
+      "trigger": "UPDATE.SET\tmySql",
+      "contents": "UPDATE ${1:table_name} SET ${2:name = \"nexa\", mail = \"shi@mail\"}"
+    },{
+      "trigger": "UPDATE.SET.WHERE\tmySql",
+      "contents": "UPDATE ${1:table_name} SET ${2:name = \"nexa\"} WHERE $3"
+    }
+  ]
+}

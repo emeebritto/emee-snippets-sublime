@@ -1,7 +1,10 @@
 {
   "scope": [
+    "source.python",
+    "source.js",
     "source.jsx",
-    "source.js"
+    "source.ts",
+    "source.tsx"
   ],
   "completions": [
     {
