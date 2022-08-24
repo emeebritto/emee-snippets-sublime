@@ -12,10 +12,10 @@
       "contents": "const $1 = $2"
     },{
       "trigger": "var\tnode",
-      "contents": "var $1 = $2)"
+      "contents": "var $1 = $2"
     },{
       "trigger": "let\tnode",
-      "contents": "let $1 = $2)"
+      "contents": "let $1 = $2"
     },{
       "trigger": "if\tnode",
       "contents": "if ($1) {\n\t$2\n}"

@@ -1,0 +1,31 @@
+{
+  "scope": [
+    "source.cs"
+  ],
+  "completions": [
+    {
+      "trigger": "Console.WriteLine\tC#",
+      "contents": "Console.WriteLine($1);"
+    },
+    {
+      "trigger": "Console.ReadLine\tC#",
+      "contents": "Console.ReadLine($1);"
+    },
+    {
+      "trigger": "string\tC#",
+      "contents": "string"
+    },
+    {
+      "trigger": "int\tC#",
+      "contents": "int"
+    },
+    {
+      "trigger": "var.string\tC#",
+      "contents": "string ${1:name} = $2;"
+    },
+    {
+      "trigger": "var.int\tC#",
+      "contents": "int ${1:name} = $2;"
+    }
+  ]
+}
