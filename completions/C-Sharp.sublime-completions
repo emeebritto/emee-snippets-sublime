@@ -4,28 +4,77 @@
   ],
   "completions": [
     {
-      "trigger": "Console.WriteLine\tC#",
+      "trigger": "Console.WriteLine(any)\tC#",
       "contents": "Console.WriteLine($1);"
-    },
-    {
-      "trigger": "Console.ReadLine\tC#",
+    },{
+      "trigger": "Console.ReadLine(any)\tC#",
       "contents": "Console.ReadLine($1);"
-    },
-    {
+    },{
       "trigger": "string\tC#",
       "contents": "string"
-    },
-    {
+    },{
       "trigger": "int\tC#",
       "contents": "int"
-    },
-    {
+    },{
+      "trigger": "char\tC#",
+      "contents": "char"
+    },{
+      "trigger": "float\tC#",
+      "contents": "float"
+    },{
+      "trigger": "bool\tC#",
+      "contents": "bool"
+    },{
       "trigger": "var.string\tC#",
-      "contents": "string ${1:name} = $2;"
-    },
-    {
+      "contents": "string ${1:name} = \"$2\";"
+    },{
       "trigger": "var.int\tC#",
       "contents": "int ${1:name} = $2;"
+    },{
+      "trigger": "var.char\tC#",
+      "contents": "char ${1:name} = '$2';"
+    },{
+      "trigger": "var.double\tC#",
+      "contents": "double ${1:name} = $2;"
+    },{
+      "trigger": "var.float\tC#",
+      "contents": "float ${1:name} = $2;"
+    },{
+      "trigger": "var.bool\tC#",
+      "contents": "bool ${1:name} = ${2:false};"
+    },{
+      "trigger": "string.Length\tC#",
+      "contents": "$1.Length"
+    },{
+      "trigger": "string.ToUpper()\tC#",
+      "contents": "$1.ToUpper()"
+    },{
+      "trigger": "string.ToLower()\tC#",
+      "contents": "$1.ToLower()"
+    },{
+      "trigger": "string.Contains(string) -> bool\tC#",
+      "contents": "$1.Contains($2)"
+    },{
+      "trigger": "string.IndexOf(string) -> int\tC#",
+      "contents": "$1.IndexOf($2)"
+    },{
+      "trigger": "Math.Abs(num) -> num\tC#",
+      "contents": "Math.Abs($1)"
+    },{
+      "trigger": "Math.Pow(num, num) -> num\tC#",
+      "contents": "Math.Pow($1, $2)"
+    },{
+      "trigger": "Math.Sqrt(num) -> num\tC#",
+      "contents": "Math.Sqrt($1)"
+    },{
+      "trigger": "Math.Max(num, num) -> num\tC#",
+      "contents": "Math.Max($1, $2)"
+    },{
+      "trigger": "Math.Min(num, num) -> num\tC#",
+      "contents": "Math.Min($1, $2)"
+    },{
+      "trigger": "Math.Round(float) -> num\tC#",
+      "contents": "Math.Round($1)"
     }
   ]
 }
