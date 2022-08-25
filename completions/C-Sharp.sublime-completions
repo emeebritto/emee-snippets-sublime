@@ -5,10 +5,10 @@
   "completions": [
     {
       "trigger": "Console.WriteLine(any)\tC#",
-      "contents": "Console.WriteLine($1);"
+      "contents": "Console.WriteLine($1)"
     },{
       "trigger": "Console.ReadLine(any)\tC#",
-      "contents": "Console.ReadLine($1);"
+      "contents": "Console.ReadLine($1)"
     },{
       "trigger": "string\tC#",
       "contents": "string"
@@ -75,6 +75,15 @@
     },{
       "trigger": "Math.Round(float) -> num\tC#",
       "contents": "Math.Round($1)"
+    },{
+      "trigger": "Console.Write(any)\tC#",
+      "contents": "Console.Write($1)"
+    },{
+      "trigger": "Convert.ToInt32(any) -> int\tC#",
+      "contents": "Convert.ToInt32($1)"
+    },{
+      "trigger": "Convert.ToDouble(any) -> double\tC#",
+      "contents": "Convert.ToDouble($1)"
     }
   ]
 }
