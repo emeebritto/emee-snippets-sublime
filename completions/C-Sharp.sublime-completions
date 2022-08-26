@@ -84,6 +84,24 @@
     },{
       "trigger": "Convert.ToDouble(any) -> double\tC#",
       "contents": "Convert.ToDouble($1)"
+    },{
+      "trigger": "new.string\tC#",
+      "contents": "new string$1"
+    },{
+      "trigger": "new.int\tC#",
+      "contents": "new int$1"
+    },{
+      "trigger": "new.float\tC#",
+      "contents": "new float$1"
+    },{
+      "trigger": "new.bool\tC#",
+      "contents": "new bool$1"
+    },{
+      "trigger": "new.limited.array\tC#",
+      "contents": "new ${1:type}[${2:limit}]"
+    },{
+      "trigger": "array\tC#",
+      "contents": "{ $1, $2 }"
     }
   ]
 }
