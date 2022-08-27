@@ -102,6 +102,24 @@
     },{
       "trigger": "array\tC#",
       "contents": "{ $1, $2 }"
+    },{
+      "trigger": "static\tC#",
+      "contents": "static"
+    },{
+      "trigger": "void\tC#",
+      "contents": "void"
+    },{
+      "trigger": "method\tC#",
+      "contents": "${1:static }${2:void} ${3:name}($4)\n{\n\t$5\n}"
+    },{
+      "trigger": "params\tC#",
+      "contents": "${1:string} ${2:name}"
+    },{
+      "trigger": "concat\tC#",
+      "contents": "\" + ${1:varName} + \""
+    },{
+      "trigger": "return\tC#",
+      "contents": "return"
     }
   ]
 }
