@@ -120,6 +120,18 @@
     },{
       "trigger": "return\tC#",
       "contents": "return"
+    },{
+      "trigger": "if\tC#",
+      "contents": "if ($1)\n{\n\t$2\n}"
+    },{
+      "trigger": "else\tC#",
+      "contents": "else\n{\n\t$1\n}"
+    },{
+      "trigger": "else.if\tC#",
+      "contents": "else if\n{\n\t$1\n}"
+    },{
+      "trigger": "if.else\tC#",
+      "contents": "if ($1)\n{\n\t$2\n} else\n{\n\t$3\n}"
     }
   ]
 }
