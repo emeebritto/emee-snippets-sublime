@@ -132,6 +132,15 @@
     },{
       "trigger": "if.else\tC#",
       "contents": "if ($1)\n{\n\t$2\n} else\n{\n\t$3\n}"
+    },{
+      "trigger": "switch\tC#",
+      "contents": "switch ($1)\n{\n\tcase ${2:0}:\n\t\t$3\n\t\tbreak;\n\tcase ${4:1}:\n\t\t$5\n\t\tbreak;$6\n}"
+    },{
+      "trigger": "case\tC#",
+      "contents": "case ${2:0}:\n\t$3\n\tbreak;\n"
+    },{
+      "trigger": "default\tC#",
+      "contents": "default:\n\t$3\n\tbreak;\n"
     }
   ]
 }
