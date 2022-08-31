@@ -141,6 +141,18 @@
     },{
       "trigger": "default\tC#",
       "contents": "default:\n\t$3\n\tbreak;\n"
+    },{
+      "trigger": "while\tC#",
+      "contents": "while (${1:condition})\n{\n\t$2\n}"
+    },{
+      "trigger": "break\tC#",
+      "contents": "break;"
+    },{
+      "trigger": "do.while\tC#",
+      "contents": "do\n{\n\t$1\n} while (${2:condition});"
+    },{
+      "trigger": "for\tC#",
+      "contents": "for (int i = ${1:0}; i ${2:<= 5}; ${3:i++})\n{\n\t$2\n}"
     }
   ]
 }
