@@ -122,19 +122,19 @@
       "contents": "return"
     },{
       "trigger": "if\tC#",
-      "contents": "if ($1)\n{\n\t$2\n}"
+      "contents": "if ($1) {\n\t$2\n}"
     },{
       "trigger": "else\tC#",
-      "contents": "else\n{\n\t$1\n}"
+      "contents": "else {\n\t$1\n}"
     },{
       "trigger": "else.if\tC#",
-      "contents": "else if\n{\n\t$1\n}"
+      "contents": "else if {\n\t$1\n}"
     },{
       "trigger": "if.else\tC#",
-      "contents": "if ($1)\n{\n\t$2\n} else\n{\n\t$3\n}"
+      "contents": "if ($1) {\n\t$2\n} else {\n\t$3\n}"
     },{
       "trigger": "switch\tC#",
-      "contents": "switch ($1)\n{\n\tcase ${2:0}:\n\t\t$3\n\t\tbreak;\n\tcase ${4:1}:\n\t\t$5\n\t\tbreak;$6\n}"
+      "contents": "switch ($1) {\n\tcase ${2:0}:\n\t\t$3\n\t\tbreak;\n\tcase ${4:1}:\n\t\t$5\n\t\tbreak;$6\n}"
     },{
       "trigger": "case\tC#",
       "contents": "case ${2:0}:\n\t$3\n\tbreak;\n"
@@ -143,16 +143,67 @@
       "contents": "default:\n\t$3\n\tbreak;\n"
     },{
       "trigger": "while\tC#",
-      "contents": "while (${1:condition})\n{\n\t$2\n}"
+      "contents": "while (${1:condition}) {\n\t$2\n}"
     },{
       "trigger": "break\tC#",
       "contents": "break;"
     },{
       "trigger": "do.while\tC#",
-      "contents": "do\n{\n\t$1\n} while (${2:condition});"
+      "contents": "do {\n\t$1\n} while (${2:condition});"
     },{
       "trigger": "for\tC#",
-      "contents": "for (int i = ${1:0}; i ${2:<= 5}; ${3:i++})\n{\n\t$2\n}"
+      "contents": "for (int i = ${1:0}; i ${2:<= 5}; ${3:i++}) {\n\t$2\n}"
+    },{
+      "trigger": "try\tC#",
+      "contents": "try {\n\t$1\n}"
+    },{
+      "trigger": "try.catch\tC#",
+      "contents": "try {\n\t$1\n} catch(${2:Exception e}) {\n\t$3\n}"
+    },{
+      "trigger": "try.catch.finally\tC#",
+      "contents": "try {\n\t$1\n} catch(${2:Exception e}) {\n\t$3\n} finally {\n\t$4\n}"
+    },{
+      "trigger": "catch\tC#",
+      "contents": "catch(${1:Exception e}) {\n\t$2\n}"
+    },{
+      "trigger": "finally\tC#",
+      "contents": "finally {\n\t$1\n}"
+    },{
+      "trigger": "exception.Message\tC#",
+      "contents": "${1:e}.Message"
+    },{
+      "trigger": "DivideByZeroException\tC#",
+      "contents": "DivideByZeroException"
+    },{
+      "trigger": "FormatException\tC#",
+      "contents": "FormatException"
+    },{
+      "trigger": "Exception\tC#",
+      "contents": "Exception"
+    },{
+      "trigger": "Class\tC#",
+      "contents": "Class ${1:Nexa} {\n\t$2\n}"
+    },{
+      "trigger": "namespace\tC#",
+      "contents": "namespace ${1:Nexa} {\n\t$2\n}"
+    },{
+      "trigger": "using\tC#",
+      "contents": "using ${1:Nexa};"
+    },{
+      "trigger": "using.System.Text\tC#",
+      "contents": "using System.Text;"
+    },{
+      "trigger": "using.System.Threading.Tasks\tC#",
+      "contents": "using System.Threading.Tasks;"
+    },{
+      "trigger": "using.System\tC#",
+      "contents": "using System;"
+    },{
+      "trigger": "using.System.Linq\tC#",
+      "contents": "using System.Linq;"
+    },{
+      "trigger": "using.System.Collections.Generic\tC#",
+      "contents": "using System.Collections.Generic;"
     }
   ]
 }
