@@ -109,8 +109,23 @@
       "trigger": "void\tC#",
       "contents": "void"
     },{
-      "trigger": "method\tC#",
-      "contents": "${1:static }${2:void} ${3:name}($4)\n{\n\t$5\n}"
+      "trigger": "method.static\tC#",
+      "contents": "static ${1:void} ${2:name}($3) {\n\t$4\n}"
+    },{
+      "trigger": "method.public\tC#",
+      "contents": "public ${1:void} ${2:name}($3) {\n\t$4\n}"
+    },{
+      "trigger": "method.private\tC#",
+      "contents": "private ${1:void} ${2:name}($3) {\n\t$4\n}"
+    },{
+      "trigger": "method.getter:setter\tC#",
+      "contents": "${1:public} ${2:string} ${3:name} {\n\tget { return $4 }\n\tset { $4 = value }\n}"
+    },{
+      "trigger": "get\tC#",
+      "contents": "get { return $1; }"
+    },{
+      "trigger": "set\tC#",
+      "contents": "set { $1 = value; }"
     },{
       "trigger": "params\tC#",
       "contents": "${1:string} ${2:name}"
