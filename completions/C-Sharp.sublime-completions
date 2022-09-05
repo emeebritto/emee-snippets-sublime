@@ -115,6 +115,12 @@
       "trigger": "method.public\tC#",
       "contents": "public ${1:void} ${2:name}($3) {\n\t$4\n}"
     },{
+      "trigger": "method.public.virtual\tC#",
+      "contents": "public virtual ${1:void} ${2:name}($3) {\n\t$4\n}"
+    },{
+      "trigger": "method.public.override\tC#",
+      "contents": "public override ${1:void} ${2:name}($3) {\n\t$4\n}"
+    },{
       "trigger": "method.private\tC#",
       "contents": "private ${1:void} ${2:name}($3) {\n\t$4\n}"
     },{
@@ -199,6 +205,9 @@
       "trigger": "Class\tC#",
       "contents": "Class ${1:Nexa} {\n\t$2\n}"
     },{
+      "trigger": "Class.inheritance\tC#",
+      "contents": "Class ${1:Nexa}:${2:Person} {\n\t$3\n}"
+    },{
       "trigger": "namespace\tC#",
       "contents": "namespace ${1:Nexa} {\n\t$2\n}"
     },{
@@ -221,4 +230,4 @@
       "contents": "using System.Collections.Generic;"
     }
   ]
-}
+} 
