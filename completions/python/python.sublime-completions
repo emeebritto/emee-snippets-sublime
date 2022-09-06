@@ -95,6 +95,12 @@
     },{
       "trigger": "app.route(dinamic_path)\tpython.flask",
       "contents": "@${1:app}.route('/<${2:id}>')\ndef ${3:function}(${2:params}$4):\n\t${5:pass}"
+    },{
+      "trigger": "match.case\tpython",
+      "contents": "match ${1:value}:\n\tcase $2:\n\t\t$3\n\tcase $4:\n\t\t$5"
+    },{
+      "trigger": "case.guard\tpython",
+      "contents": "case $1 if ${2:condition}:\n\t$3"
     }
   ]
 }
