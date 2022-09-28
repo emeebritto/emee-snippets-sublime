@@ -110,6 +110,9 @@
     },{
       "trigger": "globals() -> obj\tpython",
       "contents": "globals()"
+    },{
+      "trigger": "str.replace() -> str\tpython",
+      "contents": "$1.replace($2, $3)"
     }
   ]
 }
