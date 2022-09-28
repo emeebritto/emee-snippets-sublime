@@ -101,6 +101,15 @@
     },{
       "trigger": "case.guard\tpython",
       "contents": "case $1 if ${2:condition}:\n\t$3"
+    },{
+      "trigger": "exec(str)\tpython",
+      "contents": "exec($1)"
+    },{
+      "trigger": "locals() -> obj\tpython",
+      "contents": "locals()"
+    },{
+      "trigger": "globals() -> obj\tpython",
+      "contents": "globals()"
     }
   ]
 }

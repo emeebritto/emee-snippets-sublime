@@ -53,5 +53,9 @@
       "trigger": "os.path.getsize(str) -> number\tos",
       "contents": "${1:os}.path.getsize(${2:str})"
     }
+    {
+      "trigger": "os.rename(str, str)\tos",
+      "contents": "${1:os}.rename($2, $3)"
+    }
   ]
 }
