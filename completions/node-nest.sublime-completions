@@ -1,0 +1,18 @@
+{
+  "scope": [
+    "source.js",
+    "source.ts"
+  ],
+  "completions": [
+    {
+      "trigger": "Module\nNode-Nest",
+      "contents": "@Module({\n\timports: [],\n})"
+    },{
+      "trigger": "import.Module\nNode-Nest",
+      "contents": "import { Module } from '@nestjs/common';"
+    },{
+      "trigger": "export.Module\nNode-Nest",
+      "contents": "export class ${1:name}Module {}"
+    }
+  ]
+}
