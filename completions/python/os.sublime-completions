@@ -4,58 +4,48 @@
     {
       "trigger": "import os\tos",
       "contents": "import os"
-    },
-    {
+    },{
       "trigger": "for.in.os.listdir\tos",
       "contents": "for ${1:file} in ${2:os}.listdir(${3:path}):\n\t${4:pass}"
-    },
-    {
+    },{
       "trigger": "for.in.os.walk\tos",
       "contents": "for root, dirs, files in os.walk(${1:path}):\n\t${2:pass}"
-    },
-    {
+    },{
       "trigger": "os.path.isfile(file_path) -> bool\tos",
       "contents": "${1:os}.path.isfile(${2:file_path})"
-    },
-    {
+    },{
       "trigger": "os.path.isdir(dir_path) -> bool\tos",
       "contents": "${1:os}.path.isdir(${2:dir_path})"
-    },
-    {
+    },{
       "trigger": "os.walk(path) -> iter\tos",
       "contents": "${1:os}.walk(${2:path})"
-    },
-    {
+    },{
       "trigger": "os.path.splitext(str) -> tuple\tos",
       "contents": "${1:os}.path.splitext(${2:str})"
-    },
-    {
+    },{
       "trigger": "os.path.join(str, str) -> str\tos",
       "contents": "${1:os}.path.join(${2:str}, ${3:str})"
-    },
-    {
+    },{
       "trigger": "os.remove(file_name)\tos",
       "contents": "${1:os}.remove(${2:filename})"
-    },
-    {
+    },{
       "trigger": "os.system(command)\tos",
       "contents": "${1:os}.system(${2:command})"
-    },
-    {
+    },{
       "trigger": "os.mkdir(new_path)\tos",
       "contents": "${1:os}.mkdir(${2:new_path})"
-    },
-    {
+    },{
       "trigger": "os.listdir(str) -> iter\tos",
       "contents": "${1:os}.listdir(${2})"
-    },
-    {
+    },{
       "trigger": "os.path.getsize(str) -> number\tos",
       "contents": "${1:os}.path.getsize(${2:str})"
-    }
-    {
+    },{
       "trigger": "os.rename(str, str)\tos",
       "contents": "${1:os}.rename($2, $3)"
+    },{
+      "trigger": "os.path.exists(str)\tos",
+      "contents": "${1:os}.path.exists($2)"
     }
   ]
 }
