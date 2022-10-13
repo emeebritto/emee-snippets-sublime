@@ -5,14 +5,56 @@
   ],
   "completions": [
     {
-      "trigger": "Module\nNode-Nest",
-      "contents": "@Module({\n\timports: [],\n})"
+      "trigger": "decorator.Module\nNode-Nest",
+      "contents": "@Module({\n\timports: [],\n\tcontrollers: [],\n\tproviders: [],\n\texports: [],\n})"
+    },{
+      "trigger": "decorator.Controller\nNode-Nest",
+      "contents": "@Controller('$1')"
+    },{
+      "trigger": "decorator.Post\nNode-Nest",
+      "contents": "@Post('$1')"
+    },{
+      "trigger": "decorator.Global\nNode-Nest",
+      "contents": "@Global()"
+    },{
+      "trigger": "decorator.Req\nNode-Nest",
+      "contents": "@Req()"
+    },{
+      "trigger": "decorator.Body\nNode-Nest",
+      "contents": "@Body()"
+    },{
+      "trigger": "decorator.Service\nNode-Nest",
+      "contents": "@Injectable({$1})"
+    },{
+      "trigger": "decorator.Injectable\nNode-Nest",
+      "contents": "@Injectable({$1})"
     },{
       "trigger": "import.Module\nNode-Nest",
       "contents": "import { Module } from '@nestjs/common';"
     },{
-      "trigger": "export.Module\nNode-Nest",
-      "contents": "export class ${1:name}Module {}"
+      "trigger": "import.Controller\nNode-Nest",
+      "contents": "import { Controller } from '@nestjs/common';"
+    },{
+      "trigger": "import.Service\nNode-Nest",
+      "contents": "import { Injectable } from '@nestjs/common';"
+    },{
+      "trigger": "export.class.Module\nNode-Nest",
+      "contents": "export class ${1:name}Module {$2}"
+    },{
+      "trigger": "class.Module\nNode-Nest",
+      "contents": "class ${1:name}Module {$2}"
+    },{
+      "trigger": "class.Service\nNode-Nest",
+      "contents": "class ${1:name}Service {$2}"
+    },{
+      "trigger": "export.class.Service\nNode-Nest",
+      "contents": "export class ${1:name}Service {$2}"
+    },{
+      "trigger": "class.Controller\nNode-Nest",
+      "contents": "class ${1:name}Controller {$2}"
+    },{
+      "trigger": "export.class.Controller\nNode-Nest",
+      "contents": "export class ${1:name}Controller {$2}"
     }
   ]
 }
